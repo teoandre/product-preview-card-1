@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --fontetitulo: 'Fraunces', sans-serif;
+    /*Weights: 700*/
+
+    --fonteparagrafo: 'Montserrat', sans-serif;
+    /*Weights: 500, 700*/
+
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: var(--Cream);
+}
+
+body p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+@media (max-width: 600px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        background-color: var(--White);
+        width: 300px;
+        height: auto;
+        border-radius: 14px;
+    }
+
+    #imagem > img {
+        background-color: var(--White);
+        width: 100%;
+        height: 40%;
+        border-radius: 14px 14px 0 0;
+    }
+
+    #detalhes {
+        padding: 20px;
+    }
+
+    #detalhes h4 {
+        font-family: var(--fonteparagrafo);
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.5em;
+    }
+
+    #detalhes h1 {
+        font-family: var(--fontetitulo);
+        margin: 15px 0;
+        font-size: 1.8em
+    }
+
+    #detalhes p {
+        font-size: 14px;
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+    }
+
+    .preço {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    #detalhes .preço > h1 {
+
+        margin-right: 10px;
+        color: var(--dark-cyan);
+        font-weight: 700;
+    }
+
+    #detalhes .preço > p {
+        font-size: 0.8em;
+        text-decoration: line-through;
+    }
+
+    .botao {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+        background-color: var(--dark-cyan);
+        border-radius: 12px;
+        cursor: pointer;
+
+    }
+
+    .botao:hover {
+        background-color: var(--very-dark-blue);
+    }
+
+    #detalhes .botao > span {
+        font-family: var(--fonteparagrafo);
+        color: var(--White);
+        font-weight: 700;
+        font-size: 14px;
+
+    }
+
+    #detalhes .botao > img, span {
+        margin: 0 5px;
+    }
+
+    
+
+
+
+}
+
+@media (max-width: 710px) {
+
+}
+
+@media (min-width:711px) {
+
+}
