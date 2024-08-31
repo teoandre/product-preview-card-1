@@ -147,21 +147,191 @@ body p {
     }
 
     main {
+        background-color: var(--White);
         display: flex;
         display: flex;
         width: 600px;
         height: 300px;
+        border-radius: 14px;
     }
 
     main #imagem {
-        
+        background-image: url('../imagens/image-product-desktop.jpg');
+        background-size: cover;
+        width: 65%;
+        border-radius: 14px 0 0 14px;
     }
 
+    #detalhes {
+        padding: 20px;
+    }
+
+    #detalhes h4 {
+        font-family: var(--fonteparagrafo);
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.5em;
+    }
+
+    #detalhes h1 {
+        font-family: var(--fontetitulo);
+        margin: 10px 0;
+        font-size: 1.8em;
+    }
+
+    #detalhes p {
+        font-size: 14px;
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+    }
+
+    .preço {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    #detalhes .preço > h1 {
+
+        margin-right: 10px;
+        color: var(--dark-cyan);
+        font-weight: 700;
+    }
+
+    #detalhes .preço > p {
+        font-size: 0.8em;
+        text-decoration: line-through;
+    }
+
+    .botao {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+        background-color: var(--dark-cyan);
+        border-radius: 12px;
+        cursor: pointer;
+
+    }
+
+    .botao:hover {
+        background-color: var(--very-dark-blue);
+    }
+
+    #detalhes .botao > span {
+        font-family: var(--fonteparagrafo);
+        color: var(--White);
+        font-weight: 700;
+        font-size: 14px;
+
+    }
+
+    #detalhes .botao > img, span {
+        margin: 0 5px;
+    }
 
 }
 
 
 
 @media (min-width:821px) {
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    main {
+        background-color: var(--White);
+        display: flex;
+        width: 800px;
+        height: 400px;
+        border-radius: 14px;
+    }
+
+    main #imagem {
+        background-image: url('../imagens/image-product-desktop.jpg');
+        background-size: cover;
+        width: 65%;
+        border-radius: 14px 0 0 14px;
+    }
+
+    #detalhes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    #detalhes h4 {
+        font-family: var(--fonteparagrafo);
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.5em;
+    }
+
+    #detalhes h1 {
+        font-family: var(--fontetitulo);
+        margin: 10px 0;
+        font-size: 1.8em;
+    }
+
+    #detalhes p {
+        font-size: 14px;
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+    }
+
+    .preço {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    #detalhes .preço > h1 {
+
+        margin-right: 10px;
+        color: var(--dark-cyan);
+        font-weight: 700;
+    }
+
+    #detalhes .preço > p {
+        font-size: 0.8em;
+        text-decoration: line-through;
+    }
+
+    .botao {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+        background-color: var(--dark-cyan);
+        border-radius: 12px;
+        cursor: pointer;
+
+    }
+
+    .botao:hover {
+        background-color: var(--very-dark-blue);
+    }
+
+    #detalhes .botao > span {
+        font-family: var(--fonteparagrafo);
+        color: var(--White);
+        font-weight: 700;
+        font-size: 14px;
+
+    }
+
+    #detalhes .botao > img, span {
+        margin: 0 5px;
+    }
 
 }
+
